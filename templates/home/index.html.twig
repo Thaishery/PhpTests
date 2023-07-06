@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    {% if isLoged%}
+        <h1>Vous êtes connecté</h1> <a href="/logout">Se déconnecter</a>
+    {% else %}
+        <h1>Vous êtes déconnecter</h1> <a href="/login">Se connecter</a>
+    {% endif %}
+{% endblock %}
